@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(247, 247, 247, 0.725),rgb(247,247,247,0.725)100%), url(./img/velho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.universo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+}
+.LadoEsquerdo{
+    background-image: linear-gradient(rgba(247, 247, 247, 0.2),rgb(247,247,247,0.2)100%), url(./img/LD.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    background-size: 27.5em 39em;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+
+/*Lado direito*/
+.LadoDireito{
+    border-radius: 2em;
+    background-image: linear-gradient(rgba(247, 247, 247, 0.2),rgb(247,247,247,0.2)100%), url(./img/PapelVelho.png);
+    background-repeat: no-repeat;
+    background-size: 27.5em 39em;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height:100%;
+    min-height: 38rem;
+    min-width: 5em; 
+    margin-left: 15px;
+}
+
+.LadoDireito .logo img{
+    height: 3em;
+}
+
+#email{
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1em;
+}
+#senha{
+    width: 20rem;
+    height: 2rem;
+}
+.LadoDireito .login .botaoEntrar {
+    width: 20rem;
+    height: 2.3rem;
+    background: #59429d;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* Elemento com o estado da pseudoclasse "hover" */
+.LadoDireito .login .botaoEntrar:hover {
+    background-color: white;
+    color:#59429d;
+}
+.outroLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.outroLogin p{
+   font-size: 1.3em;
+}
+.outroLogin a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.outroLogin a img{
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 0.5em;
+}
+.outroLogin .Esque{
+    margin-top: 1.5em;
+}
+
+.LadoDireito .SemConta{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.LadoDireito .obterApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.LadoDireito .obterApp .Apps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.obterApp .Apps .App1 img{
+    width:10em;
+    height: 3em;
+    margin-right: 0.5em;
+}
+.obterApp .Apps .App2 img{
+    width: 10em;
+    height: 3em;
+}
+
+
+/* Responsividade */
+/* Media queries */
+
+@media (max-width: 1300px){
+    .universo{
+        width: 90%;
+    }
+    .LadoEsquerdo{
+        margin-right: 15px;
+    }
+    .LadoDireito{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 957px){
+    .universo{
+        width: 100%;
+    }
+}
+
+
+@Media (max-width: 875px){
+    .universo{
+        width: 70%;
+    }
+    .LadoEsquerdo{
+        display: none;
+    }
+    .LadoDireito{
+        background-size: 25em 39em;
+        width: 100%;
+        height: 90%;
+    }
+    .obterApp .Apps .App1 img{
+        width:9em;
+        height: 3em;
+        margin-right: 0.5em;
+    }
+    .obterApp .Apps .App2 img{
+        width: 9em;
+        height: 3em;
+    }
+}
+
+@Media (max-width: 875px){
+    .universo{
+        width: 100%;
+    }
+    .universo{
+        min-width: 356px;
+    }
+}
